@@ -10,7 +10,7 @@ const url = "https://api.imgflip.com/get_memes";
 const ImageDisplay = ({ url, id, name }) => {
   return (
     <div>
-      <img style={{ height: 100 }} alt={id} src={url} />
+      <img style={{ height: 150 }} alt={id} src={url} />
       <div>{name}</div>
     </div>
   );
@@ -41,7 +41,7 @@ class App extends React.Component {
     return this.state.data.map(item => {
       return (
         <div style={{ flexWrap: "wrap" }}>
-          <img style={{ height: 100 }} alt={item.id} src={item.url} />
+          <img className="display-group2" alt={item.id} src={item.url} />
           <ImportedImage>{item.name}</ImportedImage>
         </div>
       );
@@ -63,7 +63,6 @@ class App extends React.Component {
         </section>
         <br />
         {data && <div className="display-group1">{this.repeatedImage()}</div>}
-
         <ImportedImage>
           this was added in order to play around with styled component
         </ImportedImage>
