@@ -1,2 +1,0 @@
-# MemeTest
-Created with CodeSandbox

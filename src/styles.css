@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.display-group {
+  display: flex;
+  justify-content: space-around;
+}
+.display-group1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 1em;
+  margin-right: 1em;
+}
